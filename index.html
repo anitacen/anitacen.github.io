@@ -95,12 +95,64 @@
   </table>
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
+      <!-- UnityVideo -->
+      <tr onmouseout="unityvideo_stop()" onmouseover="unityvideo_start()">
+        <td style="padding:20px;width:35%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id="unityvideo_image">
+              <img src="images/unityvideo.png" width=120% height=90%>
+            </div>
+            <div class="two" id='unityvideo_video'><video width=120% height=120% muted autoplay loop>
+                <source src="images/unityvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video></div>
+          </div>
+          <script type="text/javascript">
+            function unityvideo_start() {
+              document.getElementById('unityvideo_video').style.opacity = "1";
+              document.getElementById('unityvideo_image').style.opacity = "0";
+            }
+
+            function unityvideo_stop() {
+              document.getElementById('unityvideo_video').style.opacity = "0";
+              document.getElementById('unityvideo_image').style.opacity = "1";
+            }
+            unityvideo_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:middle">
+          <a href="https://jackailab.github.io/Projects/UnityVideo/">
+            <span class="papertitle">UnityVideo: Unified Multi-Modal Multi-Task Learning for Enhancing World-Aware Video Generation</span>
+          </a>
+          <br>
+          <a href="https://jackailab.github.io/">Jiehui Huang</a>,
+          <a href="https://julianjuaner.github.io/">Yuecheng Zhang</a>,
+          Xu He,
+          Yuan Gao,
+          <strong>Zhi Cen</strong>,
+          <a href="https://zj-binxia.github.io/">Bin Xia</a>,
+          Yan Zhou,
+          <a href="https://www.xtao.website/">Xin Tao</a>,
+          <a href="https://magicwpf.github.io/">Pengfei Wan</a>,
+          <a href="https://jiaya.me/home">Jiaya Jia</a>
+          <br>
+          <em>arxiv</em>, 2025</span>
+          <br>
+          <a href="https://jackailab.github.io/Projects/UnityVideo/">project page</a>
+          /
+          <a href="https://arxiv.org/abs/2512.07831">arXiv</a>
+          <p></p>
+        </td>
+      </tr>
+
+
+
       <!-- StreamingTalker -->
       <tr onmouseout="streamtalk_stop()" onmouseover="streamtalk_start()">
         <td style="padding:20px;width:35%;vertical-align:middle">
           <div class="one">
             <div class="two" id="streamtalk_image">
-              <img src="images/streamtalk.png" width=120% height=120%>
+              <img src="images/streamtalk.png" width=120% height=100%>
             </div>
             <div class="two" id='streamtalk_video'><video width=120% height=120% muted autoplay loop>
                 <source src="images/streamtalk.mp4" type="video/mp4">
@@ -140,7 +192,7 @@
           <br>
           <a href="https://zju3dv.github.io/StreamingTalker/">project page</a>
           /
-          <a href="https://arxiv.org/pdf/2511.14223">arXiv</a>
+          <a href="https://arxiv.org/abs/2511.14223">arXiv</a>
           <p></p>
         </td>
       </tr>
